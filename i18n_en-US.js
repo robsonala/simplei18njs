@@ -6,6 +6,7 @@ i18nFile = {
 		invalidPhrase: 'Invalid Phrase!',
 
 		calendar: {
+			title: 'Calendar',
             weekdaysFull: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
         }
 	}

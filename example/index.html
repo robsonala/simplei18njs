@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>BuscapeAPI Javascript wrapper test page</title>
+
+		<script type="text/javascript" src="../i18n.js"></script>
+		<script type="text/javascript" src="../i18n_pt-BR.js"></script>
+		<script type="text/javascript">
+			window.onload = function(){
+				var ln = new i18n();
+
+				var arr = ln.get("calendar.weekdaysFull"),
+					aux = "";
+				
+				for (var i in arr)
+					aux = aux + arr[i] + "<br />";
+
+				document.querySelector("h1").innerHTML = ln.get("calendar.title");
+				document.querySelector("h1+div").innerHTML = aux;
+			};
+		</script>
+	</head>
+	<body>
+		<div>
+			<h1></h1>
+			<div></div>
+		</div>
+	</body>
+</html>
